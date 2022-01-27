@@ -1,4 +1,4 @@
-from flask import render_template, request
+from flask import render_template, request, session
 from app.views import app_views
 
 
@@ -19,4 +19,6 @@ def show_task(user_id: int = None):
 @app_views.route('/<int:user_id>/tasks')
 def all_tasks(user_id: int = None):
     constext = {}
-    return render_template('tasks.html', **constext)
+    if session['user_id'] == user_id:
+        return render_template('tasks.html', **constext)
+    return 'Este usuario no te pertenece'

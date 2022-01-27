@@ -5,7 +5,7 @@ from app.models.state import State
 
 
 class Task():
-    __id: UUID
+    __id: int
     __title: str
     __description: str
     __end_date: datetime
@@ -13,7 +13,7 @@ class Task():
     __state: State
 
     def __init__(self, **keywords):
-        self.__id = keywords.get('id', uuid4())
+        self.__id = keywords.get('id', uuid4().int)
         self.__title = keywords.get('title', "")
         self.__description = keywords.get('description', "")
         self.__end_date = keywords.get('end_date', None)

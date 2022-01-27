@@ -1,7 +1,7 @@
-import enum
+from enum import Enum
 
 
-class State(enum):
+class State(Enum):
     ToDo = 1
     Doing = 2
     Done = 3

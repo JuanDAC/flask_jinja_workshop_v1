@@ -11,9 +11,7 @@ pip freeze > requirements.txt
 source env.sh
 
 mkdir -p ./app/static/css
-mkdir -p ./app/static/images
 mkdir -p ./app/templates
-mkdir -p ./app/auth
 
 touch ./main.py
 

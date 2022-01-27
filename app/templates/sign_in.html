@@ -8,40 +8,15 @@ Login
 {% block styles %}
 {{super()}}
 <style>
-    .login {
-        background-color: white;
-        box-shadow: 0 -10px 50px rgba(128, 128, 128, 0.4);
-        border-radius: 1em;
-        padding: 1em;
-        display: flex;
-        flex-direction: column;
-        width: calc(100vmin - 6em);
-        margin: auto;
-    }
-
-    .login>input {
-        border-radius: 1em;
-        border: none !important;
-        font-size: 1.2em;
-        height: 3em;
-        margin-block: 1em;
-        padding-inline: 1em;
-    }
-
     main {
-        display: flex;
-        flex-direction: column;
-    }
-
-    body,
-    main {
-        min-height: 100vh;
+        justify-content: center;
+        align-items: center;
     }
 </style>
 {% endblock %}
 
 {% block main %}
-<form action="" method="post" class="login">
+<form action="" method="POST" class="card">
     <input type="text" id="name" name="name" placeholder="Name" />
     <input type="password" id="password" name="password"
         placeholder="Password" />

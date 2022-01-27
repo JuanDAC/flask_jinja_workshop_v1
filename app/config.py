@@ -1,3 +1,5 @@
+from uuid import uuid4
+
 
 class Config:
-    pass
+    SECRET_KEY = uuid4().hex
