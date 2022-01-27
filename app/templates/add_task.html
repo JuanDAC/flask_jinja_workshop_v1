@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ super() }}
+Add Task
+{% endblock %}
+
+{% block styles %}
+{{super()}}
+<style>
+    main {
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+{% endblock %}
+
+{% block main %}
+<form action="" method="post" class="card">
+    <input type="text" id="title" name="title" placeholder="Title" />
+    <select name="state" id="state">
+        <option value="1">State</option>
+        <option value="1">To Do</option>
+        <option value="2">Doing</option>
+        <option value="3">Done</option>
+        <option value="4">Archined</option>
+    </select>
+    <textarea id="description" name="description"
+        placeholder="Description"></textarea>
+    <input type="submit" id="send-signup" name="signup" value="Create" />
+</form>
+{% endblock %}

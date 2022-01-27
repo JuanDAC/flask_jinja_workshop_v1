@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ super() }}
+Task
+{% endblock %}
+
+{% block styles %}
+{{super()}}
+<style>
+    main {
+        justify-content: center;
+        align-items: center;
+    }
+
+    article a {
+        display: block;
+
+    }
+</style>
+{% endblock %}
+
+{% block main %}
+<article onclick="window.open('/65/task', '_self')" class="card">
+    <input type="text" id="title" name="title" placeholder="Title" readonly />
+    <select name="state" id="state" readonly>
+        <option value="1">State</option>
+        <option value="1">To Do</option>
+        <option value="2">Doing</option>
+        <option value="3">Done</option>
+        <option value="4">Archined</option>
+    </select>
+    <textarea id="description" name="description" readonly
+        placeholder="Description"></textarea>
+</article>
+<article onclick="window.open('/65/task', '_self')" class="card">
+    <input type="text" id="title" name="title" placeholder="Title" readonly />
+    <select name="state" id="state" readonly>
+        <option value="1">State</option>
+        <option value="1">To Do</option>
+        <option value="2">Doing</option>
+        <option value="3">Done</option>
+        <option value="4">Archined</option>
+    </select>
+    <textarea id="description" name="description" readonly
+        placeholder="Description"></textarea>
+</article>
+<article onclick="window.open('/65/task', '_self')" class="card">
+    <input type="text" id="title" name="title" placeholder="Title" readonly />
+    <select name="state" id="state" readonly>
+        <option value="1">State</option>
+        <option value="1">To Do</option>
+        <option value="2">Doing</option>
+        <option value="3">Done</option>
+        <option value="4">Archined</option>
+    </select>
+    <textarea id="description" name="description" readonly
+        placeholder="Description"></textarea>
+</article>
+<article onclick="window.open('/65/task', '_self')" class="card">
+    <input type="text" id="title" name="title" placeholder="Title" readonly />
+    <select name="state" id="state" readonly>
+        <option value="1">State</option>
+        <option value="1">To Do</option>
+        <option value="2">Doing</option>
+        <option value="3">Done</option>
+        <option value="4">Archined</option>
+    </select>
+    <textarea id="description" name="description" readonly
+        placeholder="Description"></textarea>
+</article>
+{% endblock %}

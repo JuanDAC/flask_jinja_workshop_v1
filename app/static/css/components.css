@@ -1,0 +1,44 @@
+.card {
+  background: var(--card--background);
+  box-shadow: var(--card--shadow);
+  border-radius: var(--card--corner-radius);
+  padding: var(--card--padding);
+  width: var(--card--width);
+  margin-block: calc(var(--size) * 2);
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea,
+select {
+  background: var(--input--background);
+  border-radius: var(--input--corner-radius);
+  padding-inline: var(--input--padding-inline);
+  margin-block: var(--input--margin-block);
+  font-size: var(--input--font-size);
+  border: var(--input--border);
+  height: var(--input--height);
+  transition: 300ms;
+}
+
+input:hover,
+textarea:hover,
+select:hover,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  box-shadow: var(--card--shadow);
+  border: var(--input--border);
+  border-width: 0px !important;
+}
+
+textarea {
+  padding-block: var(--input--padding-inline);
+  height: calc(var(--input--height) * 2);
+}
+
+input[type='submit']:hover {
+  background-color: rgba(207, 255, 255, 0.3);
+}
